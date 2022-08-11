@@ -36,11 +36,15 @@ class FoodListController: UIViewController {
     
     func setupViews() {
         for index in 0..<myImageViews.count {
-            let imageView = myImageViews[index]
-            let imageString = foods[index].image
-            let image = UIImage(named: imageString)
-            imageView.image = image
-            imageView.contentMode = .scaleAspectFill
+            if let imageView = myImageViews.first(where: {$0.tag == index}) {
+                let imageString = foods[index].image
+                let image = UIImage(named: imageString)
+                imageView.image = image
+                imageView.contentMode = .scaleAspectFill
+                imageView.isUserInteractionEnabled = true
+            }
+            //let imageView = myImageViews[index]
+
         }
     }
     
@@ -50,6 +54,24 @@ class FoodListController: UIViewController {
             imageView.layer.borderColor = UIColor.label.cgColor
             imageView.layer.borderWidth = 2
             
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if let imageView = touch.view as? UIImageView {
+                let food = foods[imageView.tag]
+                performSegue(withIdentifier: "Detail", sender: food)
+            }
+        }
+    }
+            
+            override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "Detail" {
+                    if let next = segue.destination as? DetailController {
+                    next.food = sender as? Food
+                }
+            }
         }
     }
     /*
@@ -62,4 +84,4 @@ class FoodListController: UIViewController {
     }
     */
 
-}
+

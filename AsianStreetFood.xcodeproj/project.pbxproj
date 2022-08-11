@@ -16,6 +16,7 @@
 		2FB3FB1828A47BF800435D5E /* FoodListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FB1728A47BF800435D5E /* FoodListController.swift */; };
 		2FB3FB1A28A47C0900435D5E /* FirstContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FB1928A47C0900435D5E /* FirstContactController.swift */; };
 		2FB3FB1C28A47C1700435D5E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FB1B28A47C1700435D5E /* Food.swift */; };
+		2FB3FB1E28A4863800435D5E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FB1D28A4863800435D5E /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2FB3FB1728A47BF800435D5E /* FoodListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListController.swift; sourceTree = "<group>"; };
 		2FB3FB1928A47C0900435D5E /* FirstContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContactController.swift; sourceTree = "<group>"; };
 		2FB3FB1B28A47C1700435D5E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		2FB3FB1D28A4863800435D5E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2FB3FB1728A47BF800435D5E /* FoodListController.swift */,
 				2FB3FB1928A47C0900435D5E /* FirstContactController.swift */,
 				2FB3FB1B28A47C1700435D5E /* Food.swift */,
+				2FB3FB1D28A4863800435D5E /* DetailController.swift */,
 			);
 			path = AsianStreetFood;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB3FB0828A47B8600435D5E /* ViewController.swift in Sources */,
+				2FB3FB1E28A4863800435D5E /* DetailController.swift in Sources */,
 				2FB3FB0428A47B8600435D5E /* AppDelegate.swift in Sources */,
 				2FB3FB0628A47B8600435D5E /* SceneDelegate.swift in Sources */,
 				2FB3FB1A28A47C0900435D5E /* FirstContactController.swift in Sources */,
